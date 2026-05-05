@@ -25,7 +25,7 @@ of the above classes of instructions represents an extension in this
 specification:
 
 * The extlink:zicbom[] extension defines a set of cache-block management instructions:
-  insn:cbo.inval[], insn:cbo.clean[],  and insn:cbo.flush[]
+  insn:cbo.inval[], insn:cbo.clean[], and insn:cbo.flush[]
 * The extlink:zicboz[] extension defines a cache-block zero instruction: insn:cbo.zero[]
 * The extlink:zicbop[] extension defines a set of cache-block prefetch instructions:
   insn:prefetch.r[], insn:prefetch.w[], and insn:prefetch.i[]
