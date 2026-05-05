@@ -102,7 +102,7 @@ equal to the dividend, and the remainder is zero.# Unsigned division
 overflow cannot occur.
 
 [[divby0]]
-.Semantics for division by zero and division overflow. L is the width of the operation in bits: XLEN for insn:div[], insn:divu[], insn:rem[] and insn:remu[], or 32 for insn:divw[], insn:divuw[], insn:remw[] and insn:remuw[].
+.Semantics for division by zero and division overflow. L is the width of the operation in bits: XLEN for insn:div[], insn:divu[], insn:rem[], and insn:remu[], or 32 for insn:divw[], insn:divuw[], insn:remw[], and insn:remuw[].
 [cols="<2,^,^,^,^,^,^",options="header",]
 |===
 |Condition |Dividend |Divisor |insn:divu[]/insn:divuw[] |insn:remu[]/insn:remuw[] |insn:div[]/insn:divw[] |insn:rem[]/insn:remw[]

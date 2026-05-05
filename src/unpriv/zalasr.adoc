@@ -6,7 +6,7 @@ These can be important for high performance designs by enabling finer-grained sy
 Load-acquire and store-release are widely used in language-level memory models:
 both the Java and {cpp} memory models make use of acquire-release semantics, and {cpp}'s `atomic` provides primitives that are meant to map directly to load-acquire and store-release instructions.
 
-[#norm:zalasr_builds_on_amo]#The ext:zalasr[] extension builds on the atomic support provided by the ext:zaamo[], ext:zalrsc[] and ext:zabha[] extensions by providing additional atomic operations, although it can be implemented independently of them.#
+[#norm:zalasr_builds_on_amo]#The ext:zalasr[] extension builds on the atomic support provided by the ext:zaamo[], ext:zalrsc[], and ext:zabha[] extensions by providing additional atomic operations, although it can be implemented independently of them.#
 All of the AMO operations in ext:zaamo[] and ext:zabha[] are read-modify-write operations that both load and store.
 The ext:zalrsc[] extension provides operations that are only loads or stores.
 However, since it is designed to perform an atomic operation on a single memory word or doubleword, the loads and stores provided by ext:zalrsc[] are designed to be paired.
@@ -15,7 +15,7 @@ Therefore, the ext:zalrsc[] extension does not provide a general atomic and orde
 
 ext:zalasr[] fills this gap by offering truly standalone atomic and ordered loads and stores.
 [#norm:zalasr_atomic_ordered]#The ext:zalasr[] instructions are atomic loads and stores that support ordering annotations.#
-With the combination of ext:zaamo[], ext:zabha[], ext:zacas[] and ext:zalasr[], all {cpp} atomic operations can be supported with single instructions.
+All {cpp} atomic operations can be supported with single instructions with the combination of ext:zaamo[], ext:zabha[], ext:zacas[], and ext:zalasr[].
 
 ==== Load-Acquire and Store-Release Instructions
 

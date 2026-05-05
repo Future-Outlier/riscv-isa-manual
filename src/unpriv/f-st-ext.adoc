@@ -378,12 +378,12 @@ integer, respectively, in integer register _rs1_ into a floating-point
 number in floating-point register _rd_#. [#norm:fcvt-wu-s_fcvt-lu-s_fcvt-s-wu_fcvt-s-lu_op]#insn:fcvt.wu.s[], insn:fcvt.lu.s[], insn:fcvt.s.wu[],
 and insn:fcvt.s.lu[] variants convert to or from unsigned integer values. For
 XLEN>32, insn:fcvt.w.s[] and insn:fcvt.wu.s[] sign-extend the 32-bit result to the destination register width#.
-[#norm:fcvt_long_float_rv64_only]#insn:fcvt.l.s[], insn:fcvt.lu.s[], insn:fcvt.s.l[] and insn:fcvt.s.lu[] are RV64-only instructions#.
+[#norm:fcvt_long_float_rv64_only]#insn:fcvt.l.s[], insn:fcvt.lu.s[], insn:fcvt.s.l[], and insn:fcvt.s.lu[] are RV64-only instructions#.
 [#norm:fcvt_unrepresentable_nv]#If the rounded result is not representable in the
 destination format, it is clipped to the nearest value and the invalid
 flag is set#.
 [#norm:fcvt_int_float_valid_input]#<<int_conv>> gives the range of valid inputs
-for insn:fcvt.w.s[], insn:fcvt.wu.s[], insn:fcvt.l.s[] and insn:fcvt.lu.s[] and
+for insn:fcvt.w.s[], insn:fcvt.wu.s[], insn:fcvt.l.s[], and insn:fcvt.lu.s[] and
 the behavior of these instructions for invalid inputs#.
 (((floating-point, conversion)))
 
@@ -421,8 +421,9 @@ include::images/wavedrom/spfloat-cn-cmp.edn[]
 [[fcvt]]
 //.SP float convert and move
 
-[#norm:fsgnj-s_fsgnjn-s_fsgnjx-s_op]#Floating-point to floating-point sign-injection instructions, insn:fsgnj.s[],
-insn:fsgnjn.s[] and insn:fsgnjx.s[], produce a result that takes all bits except the
+[#norm:fsgnj-s_fsgnjn-s_fsgnjx-s_op]#insn:fsgnj.s[], insn:fsgnjn.s[], and
+insn:fsgnjx.s[] are floating-point to floating-point sign-injection instructions
+that produce a result that takes all bits except the
 sign bit from _rs1_. For insn:fsgnj[], the result's sign bit is _rs2_'s sign
 bit; for insn:fsgnjn[], the result's sign bit is the opposite of _rs2_'s sign
 bit; and for insn:fsgnjx[], the sign bit is the XOR of the sign bits of _rs1_

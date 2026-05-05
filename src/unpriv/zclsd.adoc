@@ -16,9 +16,9 @@ insn:c.ld[] and insn:c.sd[] instructions can only use `x8`-`x15`.
 
 ==== Exception Handling
 
-For the purposes of RVWMO and exception handling, insn:c.ld[], insn:c.ldsp[], insn:c.sd[] and insn:c.sdsp[] instructions are
+For the purposes of RVWMO and exception handling, insn:c.ld[], insn:c.ldsp[], insn:c.sd[], and insn:c.sdsp[] instructions are
 considered to be misaligned loads and stores, with one additional constraint:
-a insn:c.ld[], insn:c.ldsp[], insn:c.sd[] or insn:c.sdsp[] instruction whose effective address is a multiple of 4 gives rise
+a insn:c.ld[], insn:c.ldsp[], insn:c.sd[], or insn:c.sdsp[] instruction whose effective address is a multiple of 4 gives rise
 to two 4-byte memory operations.
 
 ext:zclsd[] adds the following RV32-only instructions:

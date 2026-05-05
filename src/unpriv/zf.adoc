@@ -43,7 +43,7 @@ specification.
 |E5M2 |_not applicable_ | |8 bits
 |===
 
-While the BF16 cite:[bfloat16], E4M3 and E5M2 formats are not defined in IEEE
+While the BF16 cite:[bfloat16], E4M3, and E5M2 formats are not defined in IEEE
 754-2008, the structure and operations of these formats are compatible with the
 standard. E4M3 and E5M2 are specified by the Open Compute Project (OCP) as the
 OCP FP8 (OFP8) formats cite:[ocp-fp8].

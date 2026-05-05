@@ -64,7 +64,7 @@ conversion instructions.
 [#norm:fcvt-w-h_fcvt-l-h_op]#insn:fcvt.w.h[] or insn:fcvt.l.h[] converts a half-precision floating-point number to a signed 32-bit or 64-bit integer, respectively#.
 [#norm:fcvt-h-w_fcvt-h-l_op]#insn:fcvt.h.w[] or insn:fcvt.h.l[] converts a 32-bit or 64-bit signed integer, respectively, into a half-precision floating-point number#.
 [#norm:fcvt-wu-h_fcvt-lu-h_fcvt-h-wu_fcvt-h-lu_op]#insn:fcvt.wu.h[], insn:fcvt.lu.h[], insn:fcvt.h.wu[], and insn:fcvt.h.lu[] variants convert to or from unsigned integer values#.
-[#norm:fcvt_long_half_rv64_only]#insn:fcvt.l.h[], insn:fcvt.lu.h[], insn:fcvt.h.l[] and insn:fcvt.h.lu[] are RV64-only instructions.#
+[#norm:fcvt_long_half_rv64_only]#insn:fcvt.l.h[], insn:fcvt.lu.h[], insn:fcvt.h.l[], and insn:fcvt.h.lu[] are RV64-only instructions.#
 
 include::images/wavedrom/half-prec-conv-and-mv.edn[]
 [[half-prec-conv-and-mv]]
